@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+     - name: Show redhat release
+       command: cat /etc/redhat-release
