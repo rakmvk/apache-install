@@ -1,6 +1,2 @@
 ---
-- hosts: localhost
-  become_user: jenkins
-  tasks:
-     - name: Show redhat release
-       command: cat /etc/redhat-release
+- import_playbook: /var/tmp/playbook.yaml
