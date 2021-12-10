@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+  become_user: jenkins
   tasks:
      - name: Show redhat release
        command: cat /etc/redhat-release
